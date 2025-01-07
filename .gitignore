@@ -1,3 +1,6 @@
 # IntelliJ IDEA
 .idea
 *.iml
+auth_desktop/credentials.txt
+/profile
+/photos
