@@ -1,0 +1,9 @@
+services:
+  auth:
+    build:
+      context: .
+    ports:
+      - "6080:6080"
+    volumes:
+      - ../profile:/config
+      - ./desktop:/home/alpine/Desktop

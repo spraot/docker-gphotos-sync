@@ -31,17 +31,15 @@ ENV \
     CHROMIUM_USER_FLAGS="--no-sandbox"
 
 # Installs latest Chromium package.
-RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community > /etc/apk/repositories \
-    && echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories \
-    && apk add --no-cache \
-      libstdc++@edge \
-      chromium@edge \
-      harfbuzz@edge \
-      nss@edge \
-      freetype@edge \
-      ttf-freefont@edge \
-      tzdata@edge \
-      curl@edge \
+RUN apk add --no-cache \
+      libstdc++ \
+      chromium \
+      harfbuzz \
+      nss \
+      freetype \
+      ttf-freefont \
+      tzdata \
+      curl \
     && rm -rf /var/cache/* \
     && mkdir /var/cache/apk
 

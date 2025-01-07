@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-google-chrome \
+chromium-browser \
     --user-data-dir=/config\
     --disable-gpu \
     --no-sandbox \
