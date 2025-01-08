@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 chromium-browser \
-    --user-data-dir=/config\
+    --user-data-dir=/profile \
     --disable-gpu \
     --no-sandbox \
     --no-first-run \

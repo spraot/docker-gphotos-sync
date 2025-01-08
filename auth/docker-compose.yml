@@ -5,5 +5,5 @@ services:
     ports:
       - "6080:6080"
     volumes:
-      - ../profile:/config
+      - ../profile:/profile
       - ./desktop:/home/alpine/Desktop
