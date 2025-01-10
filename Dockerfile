@@ -16,7 +16,7 @@ ENV GO111MODULE=on
 RUN go install github.com/spraot/gphotos-cdp@9600436a
 
 
-FROM crazymax/alpine-s6:3.17-edge
+FROM crazymax/alpine-s6:3.21
 LABEL maintainer="Jake Wharton <docker@jakewharton.com>"
 
 ENV \
