@@ -11,6 +11,6 @@ docker compose up -d
 
 sleep 2
 
-read -p "Press any key after you have authenticated http://localhost:6080/ in your browser"
+read -p "Press any key after you have authenticated http://$(hostname):6080/ in your browser"
 
 docker compose down
