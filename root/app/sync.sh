@@ -8,6 +8,7 @@ fi
 
 set -e
 
+rm /tmp/gphotos-cdp/Singleton*
 gphotos-cdp -v -dev -headless -dldir /download -date
 
 echo "INFO: Completed sync.sh PID $$ $(date)"
