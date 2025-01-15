@@ -13,7 +13,7 @@ RUN wget http://www.sentex.net/~mwandel/jhead/jhead-$JHEAD_VERSION.tar.gz \
     && make install
 
 ENV GO111MODULE=on
-RUN go install github.com/spraot/gphotos-cdp@12b23bc0
+RUN go install github.com/spraot/gphotos-cdp@ea7d7775
 
 
 FROM crazymax/alpine-s6:3.21
