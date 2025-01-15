@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+
+sleep 2
+/opt/noVNC/utils/novnc_proxy --vnc localhost:5999 2>&1 | sed "s/^/[noVNC     ] /"

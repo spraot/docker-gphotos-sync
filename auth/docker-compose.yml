@@ -6,4 +6,7 @@ services:
       - "6080:6080"
     volumes:
       - ../${PROFILE_DIR:-./profile}:/profile
-      - ./desktop:/home/alpine/Desktop
+      - ./desktop:/home/abc/Desktop
+    environment:
+      - PUID
+      - PGID
