@@ -9,5 +9,3 @@ chromium-browser \
     --use-mock-keychain \
     --disable-software-rasterizer \
     https://google.com
-
-chmod -R a+xrw /profile/*

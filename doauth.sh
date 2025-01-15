@@ -5,12 +5,10 @@ set -o pipefail
 PROFILE_DIR=${PROFILE_DIR:-./profile}
 
 mkdir -p $PROFILE_DIR
-chmod a+w $PROFILE_DIR
 
 docker build . --tag gphotos-sync
 (cd auth
-docker build .
-docker compose up -d
+PUID=$(id -u) PGID=$(id -g) docker compose up -d --build
 
 sleep 2
 
